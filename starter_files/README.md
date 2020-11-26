@@ -27,7 +27,32 @@ Some areas for future improvements may be to set triggers to retrain the model w
 *TODO*: Provide an architectual diagram of the project and give an introduction of each step.
 
 ## Key Steps
-*TODO*: Write a short discription of the key steps. Remeber to include all the screencasts required to demonstrate key steps. 
+*TODO*: Write a short discription of the key steps. Remeber to include all the screencasts required to demonstrate key steps.
+
+1. Creeate Service Principal and allow acces to workspace
+
+This step accociates SP account with workspace.
+Screen
+Screen
+
+2. Create and run Auto ML Experiment
+
+This step will provide a model we will deploy and consume. We need to provide some information through the form including the dataset we mentioned earlier.
+Screen
+
+We will deploy new compute cluster and select number of nodes stipulated by project instructions. Checkbox for "Explain the best model" should be thicked and Concurrency adjusted to be one less than number of compute cluster. After the experiment finishes, we will have the best trained model.
+Screen
+Screen
+
+3. Deploy the Best Model
+
+After completion of this step we will be able to interact with model by HTTP API service. To test this we will besending data over POST requests to the endpoint.
+Screen?
+
+4. Enable Application Insights
+
+This step will allow us to retrieve logs after best model deployment. We will do this by running a piece of Python code from terminal window in order to enable Application Insights for the model. After verification of active Application Insights 
+
 
 *TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
 
