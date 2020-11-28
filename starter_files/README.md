@@ -25,7 +25,7 @@ Some areas for future improvements may be to set triggers to retrain the model w
 
 ## Architectural Diagram
 *TODO*: Provide an architectual diagram of the project and give an introduction of each step.
-![Architecture of...](../Screenshots/Project 2 Arhitectural Diagram.png)
+![Architecture of...](https://github.com/DivkovicD/ML-Engineer-w-MS-Azure/blob/master/Screenshots/Project%202%20Arhitectural%20Diagram.png)
 
 ## Key Steps
 *TODO*: Write a short discription of the key steps. Remeber to include all the screencasts required to demonstrate key steps.
