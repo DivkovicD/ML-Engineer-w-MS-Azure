@@ -72,7 +72,7 @@ For this part we will be using a Jupyter notebook containing Azure Python SDK co
 screen 13 to 19
 
 ![Screenshot of pipeline section Azure ML studio, showing that the pipeline has been created](https://github.com/DivkovicD/ML-Engineer-w-MS-Azure/blob/master/Screenshots/13.%20Screenshot%20pipeline%20section%20of%20Azure%20ML%20studio%2C%20showing%20that%20the%20pipeline%20has%20been%20created.png)
-
+Screenshot of pipeline section Azure ML Studio, showing that the pipeline has been created
 
 *TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
 
