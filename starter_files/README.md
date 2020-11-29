@@ -68,8 +68,10 @@ Screenshot
 
 7. The second part of the Project 2 - Create, Publish and Consume a Pipeline
 
-For this part we will be using a Jupyter notebook containing Azure Python SDK code examples for setting data, environment, configuration and then creating, running, publishing and running from REST endpoint of Azure ML pipeline. In order to be able to open Jupyter notebook we need a compute instance to provide running environment for Python interpreter. Additionally, we need to provide config.json file containing information about Azure subscription we are using and we need to update all variables to match environment. By running all the notebook cells we will create the pipleine and schedule it's run. Results of the run may be observed by using RunDetails widget.
-screen 13 to 19 
+For this part we will be using a Jupyter notebook containing Azure Python SDK code examples for setting data, environment, configuration and then creating, running, publishing and running from REST endpoint of Azure ML pipeline. In order to be able to open Jupyter notebook we need a compute instance to provide running environment for Python interpreter. Additionally, we need to provide config.json file containing information about Azure subscription we are using and we need to update all variables to match environment. By running all the notebook cells we will create the pipleine and schedule it's run. Results of the run may be observed by using `RunDetails` widget.
+screen 13 to 19
+
+"[Screenshot of pipeline section Azure ML studio, showing that the pipeline has been created](https://github.com/DivkovicD/ML-Engineer-w-MS-Azure/blob/master/Screenshots/13.%20Screenshot%20pipeline%20section%20of%20Azure%20ML%20studio%2C%20showing%20that%20the%20pipeline%20has%20been%20created.png)
 
 
 *TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
