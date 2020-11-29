@@ -115,6 +115,10 @@ Screenshot of "Published Pipeline overview", showing a REST endpoint and a statu
 Screenshot of Jupyter Notebook, showing that the "Use `RunDetails` Widget" shows the step runs
 
 
+![Screenshot of ML studio showing the pipeline endpoint as Active](https://github.com/DivkovicD/ML-Engineer-w-MS-Azure/blob/master/Screenshots/19.%20Screenshot%20of%20ML%20studio%20showing%20the%20pipeline%20endpoint%20as%20Active.png)
+Screenshot of ML studio showing the pipeline endpoint as Active
+
+
 ![Screenshot ML studio showing the scheduled run](https://github.com/DivkovicD/ML-Engineer-w-MS-Azure/blob/master/Screenshots/18.%20Screenshot%20ML%20studio%20showing%20the%20scheduled%20run%E2%80%8B.png)
 Screenshot of ML studio showing the scheduled run
 
