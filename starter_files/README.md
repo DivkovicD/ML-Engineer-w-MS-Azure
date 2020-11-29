@@ -74,6 +74,25 @@ screen 13 to 19
 ![Screenshot of pipeline section Azure ML studio, showing that the pipeline has been created](https://github.com/DivkovicD/ML-Engineer-w-MS-Azure/blob/master/Screenshots/13.%20Screenshot%20pipeline%20section%20of%20Azure%20ML%20studio%2C%20showing%20that%20the%20pipeline%20has%20been%20created.png)
 Screenshot of pipeline section Azure ML Studio, showing that the pipeline has been created
 
+![Screenshot of pipelines section in Azure ML Studio, showing the Pipeline Endpoint](https://github.com/DivkovicD/ML-Engineer-w-MS-Azure/blob/master/Screenshots/14.%20Screenshot%20of%20pipelines%20section%20in%20Azure%20ML%20Studio%2C%20showing%20the%20Pipeline%20Endpoint.png)
+Screenshot of pipelines section in Azure ML Studio, showing the Pipeline Endpoint
+
+![Screenshot Bankmarketing dataset with the AutoML module](https://github.com/DivkovicD/ML-Engineer-w-MS-Azure/blob/master/Screenshots/15.%20Screenshot%20Bankmarketing%20dataset%20with%20the%20AutoML%20module.png)
+Screenshot of Bankmarketing dataset with the AutoML module
+
+![Screenshot of -Published Pipeline overview-, showing a REST endpoint and a status of ACTIVE](https://github.com/DivkovicD/ML-Engineer-w-MS-Azure/blob/master/Screenshots/16.%20Screenshot%20of%20-Published%20Pipeline%20overview-%2C%20showing%20a%20REST%20endpoint%20and%20a%20status%20of%20ACTIVE.png)
+Screenshot of "Published Pipeline overview", showing a REST endpoint and a status of ACTIVE
+
+![Screenshot Jupyter Notebook, showing that the -Use RunDetails Widget- shows the step runs](https://github.com/DivkovicD/ML-Engineer-w-MS-Azure/blob/master/Screenshots/17.%20Screenshot%20Jupyter%20Notebook%2C%20showing%20that%20the%20-Use%20RunDetails%20Widget-%20shows%20the%20step%20runs.png)
+Screenshot of Jupyter Notebook, showing that the -Use `RunDetails` Widget- shows the step runs
+
+![Screenshot ML studio showing the scheduled run](https://github.com/DivkovicD/ML-Engineer-w-MS-Azure/blob/master/Screenshots/18.%20Screenshot%20ML%20studio%20showing%20the%20scheduled%20run%E2%80%8B.png)
+Screenshot of ML studio showing the scheduled run
+
+![Best model trained w paramaters](https://github.com/DivkovicD/ML-Engineer-w-MS-Azure/blob/master/Screenshots/20.%20Best%20model%20trained%20w%20paramaters.png)
+Screenshot of best model trained showing paramaters
+
+
 *TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
 
 ## Screen Recording
