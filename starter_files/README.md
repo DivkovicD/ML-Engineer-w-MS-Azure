@@ -30,11 +30,11 @@ There are several clearly distinguishable phases of the project:
 ## Key Steps
 In this section a short description of the key steps may be found. We have included all relevant and required screenshots in order to demonstrate key steps.
 
-1. Create Service Principal and allow access to workspace
+**1. Create Service Principal and allow access to workspace**
 
 This step was optional and therefore details and illustrations may be found in "Standout suggestions" section of this README.md file.
 
-2. Create and run Auto ML Experiment
+**2. Create and run Auto ML Experiment**
 
 This step will provide a model we will deploy and consume. There are some mandatory data to fill in the appropriate form, starting with naming the experiment, selecting or creating a dataset for training and designate compute cluster for training, either by using the existing one or creating a new one. In this case we will create the dataset from CSV file given its URI. Then we need to create Auto ML experiment.
 
@@ -52,7 +52,7 @@ Screenshot showing that the Experiment is displayed as completed
 Screenshot of the best model after the Experiment completes
 
 
-3. Deploy the Best Model
+**3. Deploy the Best Model**
 
 After completion of this step we will be able to interact with model by HTTP API service. To test this we will be sending data over POST requests to the endpoint.
 
@@ -60,7 +60,7 @@ After completion of this step we will be able to interact with model by HTTP API
 Deploy the model with Authentication using Azure Container Instance (ACI)
 
 
-4. Enable Application Insights
+**4. Enable Application Insights**
 
 This step will allow us to retrieve logs after best model deployment. We will do this by running a piece of Python code from terminal window in order to enable Application Insights for the model. After verification of active Application Insights marked as enabled in endpoint details tab, we observer logs displayed by script we used.
 
@@ -72,7 +72,7 @@ Screenshot showing that Application Insights is enabled in the Details tab of th
 Screenshot showing logs by running the provided logs.py script
 
 
-5. Using Swagger for Documentation
+**5. Using Swagger for Documentation**
 
 In order to interact and see explanations of HTTP request types consumed by API of deployed model, we will be using Swagger tool. Preparation for running Swagger requires to download swagger.json file of deployed model from Azure. After running script with Docker setup, we will be using Python script to start server. Then we pass the URI to the Swagger which will analyze the API description.
 
@@ -84,7 +84,7 @@ Screenshot showing that swagger runs on localhost showing the HTTP API methods a
 Screenshot showing that swagger runs on localhost showing the HTTP API methods and responses for the model
 
 
-6. Consuming Deployed Model Endpoints
+**6. Consuming Deployed Model Endpoints****
 
 Shortly the term consume has meaning of interaction with the trained model. Python script is used to make the interaction. The result of running the script is data.json file created in the same  directory.
 
@@ -92,7 +92,7 @@ Shortly the term consume has meaning of interaction with the trained model. Pyth
 Screenshot showing that theendpoint.py script runs against the API producing JSON output from the model
 
 
-7. The second part of the Project 2 - Create, Publish and Consume a Pipeline
+**7. The second part of the Project 2 - Create, Publish and Consume a Pipeline**
 
 For this part we will be using a Jupyter notebook containing Azure Python SDK code examples for setting data, environment, configuration and then creating, running, publishing and running from REST endpoint of Azure ML pipeline. In order to be able to open Jupyter notebook we need a compute instance to provide running environment for Python interpreter. Additionally, we need to provide config.json file containing information about Azure subscription we are using and we need to update all variables to match environment. By running all the notebook cells we will create the pipeline and schedule its run. Results of the run may be observed by using `RunDetails` widget.
 
@@ -124,7 +124,8 @@ Screenshot of best model trained showing parameters
 
 
 ## Screen Recording
-*TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
+In this section we provide a link to a screen recording of the project in action:
+https://www.dailymotion.com/video/x7xs2t9
 
 ## Standout Suggestions
 In this section we provide information about any standout suggestions that were attempted.
