@@ -14,7 +14,7 @@ For the purpose of training the model, public data set "Bank Marketing" was used
 
 
 ## Architectural Diagram
-*TODO*: Provide an architectual diagram of the project and give an introduction of each step.
+In this section we will provide an architectural diagram of the project and make an introduction of each step.
 
 There are several clearly distinguishable phases of the project:
 
