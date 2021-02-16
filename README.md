@@ -21,17 +21,18 @@ The data used for training of the models is obtained from publicly UCI Machine L
 In this section we will explain the task we are going to be solving with this dataset and the features will be using for it.
 
 The task we are going to be solving with this dataset is training classification model to predict quality of unknown wine by its physicochemical properties. As starting point we will remove all missing data, as we have to be certain that we are using the clean dataset for training. There are eleven features we will be using for training:
-1 - fixed acidity
-2 - volatile acidity
-3 - citric acid
-4 - residual sugar
-5 - chlorides
-6 - free sulfur dioxide
-7 - total sulfur dioxide
-8 - density
-9 - pH
-10 - sulphates
-11 - alcohol
+1. fixed acidity
+2. volatile acidity
+3. citric acid
+4. residual sugar
+5. chlorides
+6. free sulfur dioxide
+7. total sulfur dioxide
+8. density
+9. pH
+10. sulphates
+11. alcohol
+
 All features are numeric, which makes data preparation part of project less demanding and we will not be focusing on it. After feeding training data to both tasks separately we will use accuracy of trained models to select better approach and deploy best model as web service.
 
 ### Access
