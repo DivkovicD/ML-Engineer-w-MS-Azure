@@ -1,3 +1,4 @@
+<!-- #region -->
 # Capstone Project Azure Machine Learning Engineer
 
 This section contains short introduction to the project.
@@ -121,7 +122,48 @@ When we deploy the ML model, Azure ML basically creates REST API endpoint and th
 
 After a while web service is started and this is an indication that model is deployed. Making note of `scoring_uri` will enable us to send a request to the web service deployed in order to test it. Interaction with web service may be performed with curl command.
 
+The details of selected web service endpoint is showing some of important details such as REST endpoint name and Application insights url. There is also a Swagger URI containing description of format for interacting with deployed web service. The following screenshot shows status of endpoint health.
+
+![](https://github.com/DivkovicD/ML-Engineer-w-MS-Azure/blob/master/Screenshots/Screenshot%20showing%20model%20endpoint%20as%20active%20-%204%20automl%20notebook.png?raw=true)
+Screenshot of the deployed model's endpoint showing as Healthy.
+
 An important aspect of monitoring an endpoint of deployed model is observing the service logs. Last but not least we will delete the service and compute target in order to reduce costs.
+
+The file `automl.ipynb` contains the code for querying model’s endpoint. After a model is deployed, we communicate with deployed model via HTTP API requests to the endpoint. The API expects JSON formed payload and there are several ways to deliver it to the endpoint. An illustration of how to interact with deployed model over URI of the endpoint is given in appropriate Python code. Please remember to update both URI and authentication key for the endpoint if applicable. The Python script converts json to string, sets the header and makes post request to scoring URI. The response from the endpoint is showing the result from consuming the API of previously deployed model in Azure ML studio. We can also run curl command from terminal window. A sample of curl command is given in `automl.ipynb` notebook.
+
+Blueprint of request toward the endpoint consists of:
+
+- URL for the web service from scoring_uri of the deployed model
+- your web service key or token
+- set (or sets) of data to score in the following format
+- `data = {"data":
+        [
+            {"fixed acidity": 7.4,
+             "volatile acidity": 0.7,
+             "citric acid": 0,
+             "residual sugar": 1.9,
+             "chlorides": 0.076,
+             "free sulfur dioxide": 11,
+             "total sulfur dioxide": 34,
+             "density": 0.9978,
+             "pH": 3.51,
+             "sulphates": 0.56,
+             "alcohol": 9.4
+            }
+        ]
+     }`
+- convert to JSON string
+- set appropriate content type as `headers = {'Content-Type': 'application/json'}`
+- if authentication is enabled, set the authorization header in headers `['Authorization'] = f'Bearer {key}'`
+- post the formatted request and display the response as `requests.post(scoring_uri, input_data, headers=headers)` and `response.text`
+
+Please refer to `automl.ipynb` notebook for detailed code and samples of three mentioned approaches for querying the service endpoint.
+
+## Future Improvement Suggestions
+As always we should first look at the training data as a starting point of making improvements on model predictions and accuracy. By looking at metrics of VotingEnsemble model we may notice room for improvements. Precision and recall chart indicates low precision model. Imbalanced classes were detected in our inputs, so we may give some effort into sampling of the data to even the class imbalance. Calibration curve indicates traces of over-fitting, which we may correct by using more data as the simplest and best possible way to prevent over-fitting, and typically increases accuracy.
+
+In terms of deployment a ML engineer may choose to deploy on AKS for performance improvements. Before making decision on different deployment, we may first observe how the users consume the service. For this purpose we may use Application Insights as indicated toward the end of this project description. In this way we are making an informed decision about increasing performance, while keeping the costs at optimum.
+
 
 ## Screen Recording
 Please use the following [link](https://www.dailymotion.com/video/x7zba4q) to a screencast of entire process of working machine learning application on Microsoft Azure ML walkthrough . The Capstone Project is about operationalizing machine learning and we will cover the following areas:
@@ -140,3 +182,4 @@ The following is a screenshot of the logs and metrics collected:
 ![Screenshot App Insights](https://github.com/DivkovicD/ML-Engineer-w-MS-Azure/blob/master/Screenshots/Screenshot%20App%20Insights.png?raw=true)
 
 ![Endpoint logs](https://github.com/DivkovicD/ML-Engineer-w-MS-Azure/blob/master/Screenshots/Endpoint%20logs.png?raw=true)
+<!-- #endregion -->
