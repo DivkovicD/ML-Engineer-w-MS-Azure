@@ -1,0 +1,83 @@
+2. The file automl.ipynb contains the code for querying model’s endpoint. After a model is deployed, we communicate with deployed model via HTTP API requests to the endpoint. The API expects JSON formed payload and there are several ways to deliver it to the endpoint. An illustration of how to interact with deployed model over URI of the endpoint is given in appropriate Python code. Please remember to update both URI and authentication key for the endpoint if applicable. The Python script converts json to string, sets the header and makes post request to scoring URI. The response from the endpoint is showing the result from consuming the API of previously deployed model in Azure ML studio. We can also run curl command from terminal window. A sample of curl command is given in automl.ipynb notebook.
+
+Blueprint of request component consists of:
+
+- URL for the web service from scoring_uri of the deployed model
+- your web service key or token
+- set (or sets) of data to score in the following format
+data = {"data":
+        [
+            {"fixed acidity": 7.4,
+             "volatile acidity": 0.7,
+             "citric acid": 0,
+             "residual sugar": 1.9,
+             "chlorides": 0.076,
+             "free sulfur dioxide": 11,
+             "total sulfur dioxide": 34,
+             "density": 0.9978,
+             "pH": 3.51,
+             "sulphates": 0.56,
+             "alcohol": 9.4
+            }
+        ]
+     }
+- convert to JSON string
+- set appropriate content type as headers = {'Content-Type': 'application/json'}
+- if authentication is enabled, set the authorization header as headers['Authorization'] = f'Bearer {key}'
+- post the formatted request and display the response as requests.post(scoring_uri, input_data, headers=headers) and response.text
+
+Please refer to automl.ipynb notebook for detailed code and samples of three mentioned approaches for querying the service endpoint.
+
+3.
+The details of selected web service endpoint is showing some of important details such as REST endpoint name and Application insights url. There is also a Swagger URI containing description of format for interacting with deployed web service. 
+3. Screenshot of the deployed model's endpoint showing as Healthy.
+
+Future Improvement Suggestions
+
+As always we should first look at the training data as a starting point of making improvements on model predictions and accuracy. By looking at metrics of VotingEnsemble model we may notice room for improvements. Precision and recall chart indicates low precision model. Imbalanced classes were detected in our inputs, so we may give some effort into sampling of the data to even the class imbalance. Calibration curve indicates traces of over-fitting, which we may correct by using more data as the simplest and best possible way to prevent over-fitting, and typically increases accuracy.
+
+In terms of deployment a ML engineer may choose to deploy on AKS for performance improvements. Before making decision on different deployment, we may first observe how the users consume the service. For this purpose we may use Application Insights as indicated toward the end of this project description.
+
+
+
+*****
+
+2. The file automl.ipynb contains the code for querying modle's endpoint. After a model is deployed, we communicate with deployed model via HTTP API requests to the endpoint. The API expects JSON formed payload and there are several ways to deliver it to the endpoint. An illustration of how to interact with deployed model over URI of the endpoint is given in appropriate Python code. Please remember to update both URI and authentication key for the endpoint if applicable. The Python script converts json to string, sets the header and makes post request to scoring URI. The response from the endpoint is showing the result from consuming the API of previously deployed model in Azure ML studio. We can also run curl command from terminal window. A sample of curl command is given in automl.ipynb notebook.
+
+Blueprint of request component consists of:
+
+- URL for the web service from scoring_uri of the deployed model
+- your web service key or token
+- set (or sets) of data to score in the following format
+data = {"data":
+        [
+            {"fixed acidity": 7.4,
+             "volatile acidity": 0.7,
+             "citric acid": 0,
+             "residual sugar": 1.9,
+             "chlorides": 0.076,
+             "free sulfur dioxide": 11,
+             "total sulfur dioxide": 34,
+             "density": 0.9978,
+             "pH": 3.51,
+             "sulphates": 0.56,
+             "alcohol": 9.4
+            }
+        ]
+     }
+- convert to JSON string
+- set appropriate content type as headers = {'Content-Type': 'application/json'}
+- if authentication is enabled, set the authorization header as headers['Authorization'] = f'Bearer {key}'
+- post the formated request and display the response as requests.post(scoring_uri, input_data, headers=headers) and response.text
+
+Please refer to automl.ipynb notebook for detailed code and samples of three mentioned approaches for querying the service endpoint.
+
+3.
+The details of selected web service endpoint is showing some of important details such as REST endpoint name and Application insights url. There is also a Swagger URI containing description of format for interacting with deployed web service. 
+3. Screenshot of the deployed model's endpoint showing as Healthy.
+
+Future Improvement Suggestions
+
+As always we should first look at the training data as a starting point of making improvements on model predictions and accuracy. By looking at metrics of VotingEnsemble model we may notice room for improvements. Precision and recall chart indicates low precision model. Imbalanced classes were detected in our inputs, so we may give some effort into sampling of the data to even the class imbalance. Calibration curve indicates traces of over-fitting, which we may correct by using more data as the simplest and best possible way to prevent over-fitting, and typically increases accuracy.
+
+In terms of deployment a ML engineer may choose to deploy on AKS for performance improvemnts. Before making decision on different deployment, we may first observe how the users consume the service. For this purpose we may use Application Insights as indicated toward the end of this project description.
