@@ -78,11 +78,11 @@ By looking at metrics of VotingEnsemble model we may observe some area for impro
 
 The next is a screenshots of the `RunDetails` widget followed by a screenshot of the best model trained with it's parameters.
 
-![1](https://github.com/DivkovicD/python-repo/blob/master/capstone-4-submission-final-14022021/Screenshots/Screenshot%20of%20RunDetails%20widget%20showing%20the%20progress%20of%20training%20runs%20of%20different%20experiments%20v5.png)
+![1](https://github.com/DivkovicD/ML-Engineer-w-MS-Azure/blob/master/Screenshots/Screenshot%20of%20RunDetails%20widget%20showing%20the%20progress%20of%20training%20runs%20of%20different%20experiments%20v5.png?raw=true)
 
 Screenshot of RunDetails widget showing the progress of AutoML training runs of different experiments
 
-![2](https://github.com/DivkovicD/python-repo/blob/master/capstone-4-submission-final-14022021/Screenshots/Screenshot%20of%20the%20best%20model%20(AutoML)%20with%20its%20run%20id.png)
+![2](https://github.com/DivkovicD/ML-Engineer-w-MS-Azure/blob/master/Screenshots/Screenshot%20of%20the%20best%20model%20(AutoML)%20with%20its%20run%20id.png?raw=true)
 
 Screenshot of the best model (AutoML) with its run id
 
@@ -103,11 +103,11 @@ For further experiments the dataset should be enriched with more cases belonging
 
 The next is a  screenshot of the `RunDetails` widget followed by a screenshot of the best model trained with it's parameters.
 
-![3](https://github.com/DivkovicD/python-repo/blob/master/capstone-4-submission-final-14022021/Screenshots/screenshot%20of%20the%20RunDetails%20HyperParameter%20widget%20that%20shows%20the%20progress%20of%20the%20training%20runs%20of%20the%20different%20experiments%20v3.png)
+![3](https://github.com/DivkovicD/ML-Engineer-w-MS-Azure/blob/master/Screenshots/screenshot%20of%20the%20RunDetails%20HyperParameter%20widget%20that%20shows%20the%20progress%20of%20the%20training%20runs%20of%20the%20different%20experiments%20v3.png?raw=true)
 
 Screenshot of the RunDetails HyperDrive widget that shows the progress of the training runs of the different experiments
 
-![4](https://github.com/DivkovicD/python-repo/blob/master/capstone-4-submission-final-14022021/Screenshots/Screenshot%20of%20the%20best%20model%20with%20its%20run%20id%20and%20the%20different%20hyperparameters%20that%20were%20tuned.png)
+![4](https://github.com/DivkovicD/ML-Engineer-w-MS-Azure/blob/master/Screenshots/Screenshot%20of%20the%20best%20model%20with%20its%20run%20id%20and%20the%20different%20hyperparameters%20that%20were%20tuned.png?raw=true)
 
 Screenshot of the best model with its run id and the different hyperparameters that were tuned
 
@@ -136,6 +136,6 @@ By enabling logging in deployed web app, we may log useful data about the reques
 
 The following is a screenshot of the logs and metrics collected:
 
-![Screenshot App Insights](https://github.com/DivkovicD/python-repo/blob/master/capstone-4-submission-final-14022021/Screenshots/Screenshot%20App%20Insights.png)
+![Screenshot App Insights](https://github.com/DivkovicD/ML-Engineer-w-MS-Azure/blob/master/Screenshots/Screenshot%20App%20Insights.png?raw=true)
 
-![Endpoint logs](https://github.com/DivkovicD/python-repo/blob/master/capstone-4-submission-final-14022021/Screenshots/Endpoint%20logs.png)
+![Endpoint logs](https://github.com/DivkovicD/ML-Engineer-w-MS-Azure/blob/master/Screenshots/Endpoint%20logs.png?raw=true)
